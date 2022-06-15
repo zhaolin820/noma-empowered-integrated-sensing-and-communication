@@ -12,10 +12,6 @@ The code for the paper
 
 ### Launch
 
-Run
-
-```
->> main
-```
+Run `main.m`
 
 
