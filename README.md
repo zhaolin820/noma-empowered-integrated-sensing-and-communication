@@ -14,4 +14,18 @@ The code for the paper
 
 Run `main.m`
 
-
+## Citing
+If you in any way use this code for research, please cite our original article listed above. The corresponding BiBTeX citations are given below:
+```
+@article{wang2022noma,
+  title={{NOMA} empowered integrated sensing and communication},
+  author={Wang, Zhaolin and Liu, Yuanwei and Mu, Xidong and Ding, Zhiguo and Dobre, Octavia A},
+  journal={{IEEE} Commun. Lett.},
+  volume={26},
+  number={3},
+  pages={677--681},
+  year={2022},
+  month=mar,
+  publisher={IEEE}
+}
+```
