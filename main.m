@@ -31,17 +31,9 @@ path_loss = sqrt(10.^((-para.noise - path_loss)/10));
 [pattern] = beampattern(sum(W,3),para.N,theta_degree);
 
 
-% plot beampattern
-figure;
-plot(theta_degree, pattern, '-b', LineWidth=1.5);
-xlim([-90,90]);
-xlabel("Azimuth Angle (degree)"); ylabel("Beampattern");
-title(['Achieved beampattern when R = ' num2str(sum(min(R_curr,[],2))) ' bps/Hz']);
-
-
-
 % plot convergence
-figure; hold on;
+figure;
+subplot(2,1,1); hold on; box on;
 obj_all = rho_c*R_all + rho_r*P_all;
 n = 0:length(R_all)-1;
 yyaxis left; plot(n, obj_all, '-o', 'LineWidth',1.5); ylabel("Objective Value");
@@ -49,4 +41,11 @@ yyaxis right; plot(n, rank_diff_all,'-s', 'LineWidth',1.5); ylabel("Penalty Term
 xlabel("Number of Outer Iterations");
 title("Convergence of the proposed algorithm");
 legend('Objective Value', 'Penalty Term');
+
+% plot beampattern
+subplot(2,1,2);
+plot(theta_degree, pattern, '-b', LineWidth=1.5);
+xlim([-90,90]);
+xlabel("Azimuth Angle (degree)"); ylabel("Beampattern");
+title(['Achieved beampattern when R = ' num2str(sum(min(R_curr,[],2))) ' bps/Hz']);
     
