@@ -14,6 +14,11 @@ The code for the paper
 
 Run `main.m`
 
+### Expected Results
+
+#### Convergence and Beampattern
+<img decoding="async" src="./results.jpg" width="70%">
+
 ## Citing
 If you in any way use this code for research, please cite our original article listed above. The corresponding BiBTeX citations are given below:
 ```
