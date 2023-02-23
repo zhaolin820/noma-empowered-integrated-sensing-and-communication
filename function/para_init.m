@@ -10,7 +10,7 @@ function [values] = para_init()
 
 values.noise = -120; % noise powe in dBm
 
-values.N = 4; % overall antennas
+values.N = 8; % overall antennas
 
 values.Pt = 10^(20/10); % overall transmit power
 values.n = 1; % equivalent noise power
